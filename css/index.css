@@ -25,7 +25,7 @@
 /*NAVBAR*/
 
 .headerbackground{
-	background-image: url('images/jellytoast.jpg');
+	background-image: url('../images/jellytoast.jpg');
 	background-attachment: fixed;
   	background-repeat: no-repeat;
   	background-size: cover;
