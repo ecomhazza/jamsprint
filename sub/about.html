@@ -14,9 +14,10 @@
 <body>
 
     <!-- NAVBAR -->
+    <div class="container">
 <nav class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="#"><img class="navlogo" src="../images/jamsjellieslogo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,7 +32,7 @@
               <a class="nav-link" href="../sub/products.html">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contactUs">Contact Us</a>
+              <a class="nav-link" href="../sub/about.html#contactUs">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://google.com">Cart</a>
@@ -43,11 +44,12 @@
       </form>
 </div>
 </nav>
+    </div>
 
     <div class="container marginTopBottom marginTop">
         <div class="row d-flex align-items-center" style="position: relative;">
             <div id="redbox"></div>
-            <div class="col-md-8 col-sm-8 col-lg-8" style="z-index: 2;">
+            <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8" style="z-index: 2;">
                 <h1>About Maher and Hall's Famous Jams and Jellies</h1>
                 <h4>Our Story</h4>
                 <p>In the early 2010s two men shared a vision... Provide the world with the   best damn jams and jellies ever seen.<br><br>
@@ -63,7 +65,7 @@
                     strive to offer the most affordable and
                     delicious jams in the South.</p>
             </div>
-            <div class="col-md-4 col-sm-4 col-lg-4">
+            <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
                 <img class="img-fluid blackWhite" src="../images/raspberry.png" alt="" >
             </div>
         </div>
@@ -71,12 +73,12 @@
 
     <div class="container marginTopBottom">
         <div class="row padBottom bannerBackground marginTopBottom">
-            <div class="col-md-12 col-sm-12 col-lg-12">
+            <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12">
                 <h2>Our Core Values</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
                 <h5>Integrity</h5>
                 <p>Our jam receipes have been handed
                     down to us from three generations.
@@ -91,7 +93,7 @@
                     plants and land happy, healthy, and
                     strong.</p>
             </div>
-            <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
                 <h5>Commitment</h5>
                 <p>We are committed to our customers
                     who love our jams and jellies as
@@ -108,13 +110,22 @@
 
     <div class="container marginTopBottom" id="contactUs">
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-lg-12">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
                 <h2>Contact Us</h2>
                 <label for="email">Email:</label><br>
                 <input type="text" name="emai" id="email"><br><br>
                 <label for="comments">Comments:</label><br>
                 <textarea name="comments" id="comments" cols="70" rows="10"></textarea><br>
-                <button id="submit">Submit</button>
+                <button id="submit">Submit</button><br>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
+                <h2>Visit Our Local Office</h2>
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe
+                        class="embed-responsive-item"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrG6kFec63ZBGK-h-cfowgrwRzBM1Rjto&q=The+RailYard+Southend,Charlotte,NC" allowfullscreen>
+                    </iframe>
+                </div>
             </div>  
         </div>
     </div>

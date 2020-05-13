@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -10,155 +11,458 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="#"><img class="navlogo" src="../images/jamsjellieslogo.png"></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../sub/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../sub/products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../sub/about.html#contactUs">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://google.com">Cart</a>
+              </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    </nav>
 
-
-    <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="#"><img class="navlogo" src="../images/jamsjellieslogo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../sub/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../sub/products.html">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../sub/about.html#contactUs">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://google.com">Cart</a>
-            </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-</div>
-</nav>
-
-    
-    
-      
-      <div class="jumbotron">
+    <!-- Jumbtron beginning -->
+    <div class="container-fluid jumbotron">
         <div class="container text-center">
           <h1 class="titleName">Maher and Hall</h1>      
           <p class="addshadow">Fresh and Homemade Products</p>
         </div>
       </div>
+
+      <!-- Main Header -->
+      <div class="container-fluid bg-3 text-center">    
+        <h3 class="productHeader">Jams and Jellies</h3>
+      </div>  
+        <br>
+
+      <!-- Products -->
+      <!-- First Row of Pictures -->
+      <div class="container-fluid ">
+          <div class="row">
+            <div class="card-deck">
+              <!--Grape Jelly Image -->
+            <div class="card">
+              <h5 class="card-title">Grape Jelly</h5>
+              <div class="card-footer">
+                <a href="#" class="imgSize"data-toggle="modal" data-target="#exampleModal">
+                    <img src="../images/grapejelly.png" class="img-fluid" ......style="width:100%"alt="Image" data-toggle="modal" data-target="#exampleModal">
+                </a>
+              </div>
+             </div>
+             <!-- Grape Jelly Image -->
+             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                   </div>
+                   <div class="modal-body">
+                     <p>Organic Sugar, Water, Organic Concord Grape Juice Concentrate, Citric Acid, Fruit Pectin</p>
+                  </div>
+                  <div class="modal-footer">
+                      <p class="footer-text">12 oz</p>
+                      
+                      <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                     
+                   </div>
+                 </div>
+               </div>
+             </div>
+         
+             
+             <div class="card">
+              <h5 class="card-title">Strawberry</h5>
+              <div class="card-footer">
+                <a href="#" class="imgSize"data-toggle="modal" data-target="#strawberryId">
+                  <img src="../images/Strawberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#strawberryId">
+              </a>
+              </div>
+              </div>
+              <!-- Strawberry Modal -->
+              <div class="modal fade" id="strawberryId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Water, Organic Strawberries, Organic Cane Sugar, Citric Acid, Natural Flavor, Organic Fruit And Vegetable Juice [Color]</p>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="footer-text">12 oz</p>
+                        
+                        <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                       
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <!--Apple Butter Image  -->
+               <div class="card">
+                <h5 class="card-title">Apple Butter</h5>
+                <div class="card-footer">
+                  <a href="#" class="imgSize"data-toggle="modal" data-target="#applebutterId">
+                    <img src="../images/applebutter.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#applebutterId">
+                </a>
+                </div>
+                </div>
+                <!-- Apple butter Modal -->
+                <div class="modal fade" id="applebutterId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Apples, Cinnamon, Allspice, Brown Sugar, Honey</p>
+                      </div>
+                      <div class="modal-footer">
+                          <p class="footer-text">12 oz</p>
+                          
+                          <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                         
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+           <!-- Blackberry Pic -->
+        <div class="card">
+          <h5 class="card-title">Blackberry</h5>
+          <div class="card-footer">
+            <a href="#" class="imgSize"data-toggle="modal" data-target="#blackberryId">
+              <img src="../images/Blackberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#blackberryId">
+          </a>
+          </div>
+          <!-- Blackberry Modal -->
+          <div class="modal fade" id="blackberryId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Organic Seedless Blackberry Puree, Organic Cane Sugar, Fruit Pectin</p>
+                </div>
+                <div class="modal-footer">
+                    <p class="footer-text">12 oz</p>
+                    
+                    <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                   
+                 </div>
+               </div>
+             </div>
+           </div>
+          </div>
+          </div>
+          </div>
+        </div>
+       
         
-      <div class="container-fluid bg-3 text-center">    
-        <h3 class="productHeader">Jams and Jellies</h3><br>
-        <div class="row">
+        
+        
+        <!-- Middle  row of Pictures -->
+        <div class="container-fluid">
+          <div class="row">
+          <div class="card-deck">
+            <!-- Cinnamon Triple Berry and Modal -->
+            <div class="card">
+                <h5 class="card-title">Cinnamon Triple Berry</h5>
+                <div class="card-footer">
+                  <a href="#" class="imgSize"data-toggle="modal" data-target="#cinnamonTripleId">
+                    <img src="../images/Cinnamon-Spiced-Triple-Berry-Jam.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#cinnamonTripleId">
+                </a>
+                </div>
+              <div class="modal fade" id="cinnamonTripleId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Berry Mix- (Organic Strawberries, Organic Blackberries, Organic Blueberries), Water, Organic Sugar, Fruit Pectin, Calcium Chloride, Citric Acid, Cinnamon, Allspice, Nutmeg
+                    </p>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="footer-text">12 oz</p>
+                        
+                        <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                       
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div> 
+        
 
-          <div class="col-sm-3 view overlay zoom">
-            <p class="whiteName">Grape Jelly</p>
-            <img src="../images/grapejelly.png"class="img-fluid"style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-           <p>Our grape jelly has a very high-quality texture and lush aroma. We source only the most flavor-packed grapes from our farm vineyards. Try it on some toasted raisin bread.YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3">
-            <p class="whiteName">Strawberry</p>
-            <img src="../images/Strawberry.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>One of our top sellers, made from our highest quality farm fresh Strawberries. Our farm fresh jelly is a great addition to a breakfast biscuit or in your peanut butter sandwich. YUM! </p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3">
-            <p class="whiteName">Apple Butter</p>
-            <img src="../images/applebutter.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace"> 12 oz</p>
-            <p>One of the best around, a fall favorite but delicious at any time of the year. We only pick the best Apples. Try on warm toast with a warm bowl of oatmeal on a cool morning. YUM!
-            </p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3">
-            <p class="whiteName">Blackberry</p>
-            <img src="../images/Blackberry.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>This Blackberry jam brings the tangy complexity of the flavors of the plump orchards where the berries were picked from. Try our delicious spread on a scone or add to oatmeal. YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
+        <!-- Cinnamon BlueBerry -->
+        <div class="card">
+            <h5 class="card-title">Cinnamon Blueberry</h5>
+            <div class="card-footer">
+              <a href="#" class="imgSize"data-toggle="modal" data-target="#cinnamonBlueID">
+                <img src="../images/cinnamonblueberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#cinnamonBlueID">
+            </a>
+            </div>
+          <div class="modal fade" id="cinnamonBlueID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Organic Wild Blueberries, Organic Cane Sugar, Cinnamon Apple Pectin, Ascorbic Acid (Vitamin C), Citric Acid</p>
+                </div>
+                <div class="modal-footer">
+                    <p class="footer-text">12 oz</p>
+                    
+                    <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                   
+                 </div>
+               </div>
+             </div>
+           </div>
         </div>
-      </div>
-          <br>
 
-          <div class="container-fluid bg-3 text-center">
+        <!-- Cinnamon Pear Butter Modal -->
+        <div class="card" >
+            <h5 class="card-title">Ginger Cardamom Pear</h5>
+            <div class="card-footer">
+              <a href="#" class="imgSize"data-toggle="modal" data-target="#gingerCardID">
+                <img src="../images//Ginger-Cardamom-Pear-Butter.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#gingerCardID">
+            </a>
+            </div>
+          <div class="modal fade" id="gingerCardID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Bartlett Pears, Organic Evaporated Cane Juice, Cardamom, Ginger, Lemon Juice, Salt</p>
+                </div>
+                <div class="modal-footer">
+                    <p class="footer-text">12 oz</p>
+                    
+                    <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                   
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div> 
+
+        <!-- BlueBerry Modal -->
+        <div class="card">
+            <h5 class="card-title">Blueberry Jam</h5>
+            <div class="card-footer">
+              <a href="#" class="imgSize"data-toggle="modal" data-target="#blueberryId">
+                <img src="../images/blueberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#blueberryId">
+            </a>
+            </div>
+          <div class="modal fade" id="blueberryId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Organic Wild Blueberries, Organic Cane Sugar, Apple Pectin</p>
+                </div>
+                <div class="modal-footer">
+                    <p class="footer-text">12 oz</p>
+                    
+                    <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                   
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Last row of Pictures -->
+       
+        <div class="container-fluid">
             <div class="row">
-          <div class="col-sm-3">
-            <p class="whiteName">Cinnamon Spiced Triple Berry</p>
-            <img src="../images/Cinnamon-Spiced-Triple-Berry-Jam.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>A wonderful spread which features strawberries, blueberries, and blackberries with a great extra punch of cinnamon will leave you wanting more. Try our spread over ice cream for a delightful treat or alongside cheese and bread. YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3"> 
-            <p class="whiteName">Cinnamon Blueberry</p>
-            <img src="../images/cinnamonblueberry.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>A personal favorite of Maher and Hall. A family favorite with a taste of summer with a pinch of cinnamon nothing could be better. Try this jam on ice cream or for a filling for a simple cake. YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3"> 
-            <p class="whiteName">Ginger Cardamom Pear</p>
-            <img src="../images/Ginger-Cardamom-Pear-Butter.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>The triple threat of ginger, cardamon, and pear makes a unique floral flavor of the pear, with the zesty yet sweet taste of the ginger and the cardamon bringing in all the flavors together make it one of our unique best spreads. YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3">
-            <p class="whiteName">Blueberry</p>
-            <img src="../images/blueberry.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace"> 12 oz</p>
-            <p>Blueberry is a classic spread, nothing could be better with this traditional spread. This goes well with a biscuit, bread, oatmeal, or even try it with some turkey for your Thanksgiving dinner. We guarantee you will love our spread> YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
-        </div>
-      </div><br>
-      
-      <div class="container-fluid bg-3 text-center">    
-        <div class="row">
-          <div class="col-sm-3">
-            <p class="whiteName">Lemon</p>
-            <img src="../images/lemon.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>This Jam has a zesty, refreshing and a little tangy flavor. It is best enjoyed on a warm spring day on a picnic in the park. You can also have it for breakfast, spread it on your biscuits and enjoy with a warm cup of coffee or tea. YUM! </p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3"> 
-            <p class="whiteName">Mix Berry</p>
-            <img src="../images/mixberry.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>This spread has the best of all worlds with the combination of strawberry, blueberry, blackberry, and raspberry. This spread is great for that summer picnic and goes very well on pancakes or waffles. Must try this spread if you are a lover of berries. YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3"> 
-            <p class="whiteName">Raspberry</p>
-            <img src="../images/raspberry.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>The intense raspberry flavor makes this spread one of the all time favorites. Traditional to use at Thanksgiving dinner or use our jam for filler in peanut butter sandwich cookies or drizzle over savory breakfast crepes. YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
-          <div class="col-sm-3">
-            <p class="whiteName">Superberry</p>
-            <img src="../images/superberry.png" class="img-responsive" style="width:100%" alt="Image">
-            <p class = "imgSpace">12 oz</p>
-            <p>Our thick, spreadable jam is a nutrient powerhouse packed with antioxidants and minerals, that will also satisfy any sweet tooth. This will go over all kinds of things so try it on crackers, breads or your favorite parfait. YUM!</p>
-            <button class="btn">Add to Cart</button>
-          </div>
-        </div>
-      </div><br><br>
+              <div class="card-deck">
 
-      
-      <hr style="width: 80%; height: 1px; margin: 0 auto; border: none;" color="blue"><br>
-     <!-- Footer -->
+              
+                <!-- Lemon Modal -->
+                <div class="card">
+                    <h5 class="card-title">Lemon</h5>
+                    <div class="card-footer">
+                      <a href="#" class="imgSize"data-toggle="modal" data-target="#lemonID">
+                        <img src="../images/lemon.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#lemonID">
+                    </a>
+                    </div>
+                  <div class="modal fade" id="lemonID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Meyer Lemons, Fresh Meyer Lemon Juice, Organic Cane Juice</p>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="footer-text">12 oz</p>
+                            
+                            <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                           
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                </div> 
+
+                <!-- Mix Berry -->
+                <div class="card">
+                    <h5 class="card-title">Mix Berry</h5>
+                    <div class="card-footer">
+                      <a href="#" class="imgSize"data-toggle="modal" data-target="#mixberryID">
+                        <img src="../images/mixberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#mixberryID">
+                    </a>
+                    </div>
+                  <div class="modal fade" id="mixberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Strawberries (Organic), Raspberries (Organic), Blueberries (Organic), Grape Puree (Organic), Water, Lemon Juice Concentrate (Organic), Dried Sugar Cane Syrup (Organic), Fruit Pectin</p>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="footer-text">12 oz</p>
+                            
+                            <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                           
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                </div> 
+
+                <!-- Raspberry -->
+                <div class="card">
+                    <h5 class="card-title">Raspberry</h5>
+                    <div class="card-footer">
+                      <a href="#" class="imgSize"data-toggle="modal" data-target="#raspberryID">
+                        <img src="../images/raspberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#raspberryID">
+                    </a>
+                    </div>
+                  <div class="modal fade" id="raspberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p> Organic Cane Sugar, Organic Raspberries, Fruit Pectin, Citric Acid</p>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="footer-text">12 oz</p>
+                            
+                            <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                           
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                </div> 
+
+               
+                <!-- Super Berry -->
+                <div class="card">
+                    <h5 class="card-title">Super Berry</h5>
+                    <div class="card-footer">
+                      <a href="#" class="imgSize"data-toggle="modal" data-target="#superberryID">
+                        <img src="../images/superberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#superberryID">
+                    </a>
+                    </div>
+                  <div class="modal fade" id="superberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Wild Blueberries, Organic Strawberries, Organic Blueberries, Organic Cane Sugar, Cinnamon Apple Pectin, Ascorbic Acid (Vitamin C), Citric Acid.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="footer-text">12 oz</p>
+                            
+                            <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                           
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                </div> 
+            </div>
+            </div>
+
+        </div>
+
+         <!-- Footer -->
 	<footer>
 		<div class="container-fluid footer">
         	<div class="row footer-row">
@@ -173,9 +477,13 @@
         	</div>
        	</div>
     </footer>
-      
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

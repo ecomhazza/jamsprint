@@ -48,8 +48,9 @@ body {
 }
 
 .jumbotron {
-  background-image: url(images/natalie-rhea-riggs-S_AqsN193U8-unsplash.jpg);
-  background-size: 100%;
+  background-image: url("../images/natalie-rhea-riggs-S_AqsN193U8-unsplash.jpg");
+  
+  background-size: cover;
   background-position: 0px, 2px;
   background-repeat: no-repeat;
   margin-top: 10em;
@@ -58,6 +59,7 @@ body {
   color: #f2f2f2;
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
 }
 
 .productHeader {
@@ -68,8 +70,9 @@ body {
 }
 
 img{
+  width: 100%;
   /* margin-bottom: 5em; */
-  
+  /* padding: 10em; */
   border: 2px solid #ff5c5c;
 }
 
@@ -77,13 +80,18 @@ img{
 .btn {
   background-color: #ff5c5c;
   color: #f2f2f2;
-  
+
   
 }
 
-.row {
+/* .row {
   margin-bottom: 5em;
+} */
+
+.line {
+  background-color: #161e67;
 }
+
 
 
 /*Footer CSS*/
@@ -115,7 +123,31 @@ img{
 	line-height: .8em;
 }
 .item1{
-	padding-top: 20px;
+	padding-top: 40px;
 }
 /*Footer CSS*/
+
+
+/* new to card deck */
+ .card{
+   background-color: #161e67;
+   color: #f2f2f2;
+   
+  } 
+  
+   .card-title{
+    color: #f2f2f2;
+    text-align: center;
+   
+ }
+
+ .custom-toggler.navbar-toggler { 
+  border-color: white; 
+} 
+
+
+.custom-toggler .navbar-toggler-icon { 
+  background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
 

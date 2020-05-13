@@ -6,12 +6,23 @@
 	width: 90px;
 }
 
+
 .navbar{
 	background-color: #161e67;
 	font-weight: bold;
 	font-size: 25px;
 
 }
+
+.custom-toggler.navbar-toggler { 
+            border-color: white; 
+        } 
+
+
+.custom-toggler .navbar-toggler-icon { 
+            background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        } 
 
 .nav-link{
 	color: #ff5c5c;
@@ -25,7 +36,7 @@
 /*NAVBAR*/
 
 .headerbackground{
-	background-image: url('../images/jellytoast.jpg');
+	background-image: url("../images/jellytoast.jpg");
 	background-attachment: fixed;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -167,14 +178,70 @@
 	padding-top: 20px;
 }
 
-.card-deck{
+/*.card-deck{
 	display: flex;
 	justify-content: space-between;
-}
+}*/
 
 .line{
 	background-color: #161e67;
 }
+
+/*Carousel*/
+.carousel-inner{
+	display: flex;
+	
+	align-items: center;
+	height: 300px;
+	width: 300px;
+}
+
+.carousel-item{
+
+}
+
+#myCarousel{
+	margin: 50px 50px;
+	
+}
+
+.content{
+	justify-content: center;
+	align-items: center; 
+	text-align: center;
+}
+
+
+.slideTextArea{
+	margin:20px 20px;
+	width: 40%; 
+	padding-left: 2%;
+}
+
+.slideText{
+	font-style: italic;
+}
+
+.slider{
+		
+		height: 150px;
+		width: 150px;
+		border-radius:100%; 
+
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='blue' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='blue' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+
+
+
+
 
 
 /*Footer CSS*/
