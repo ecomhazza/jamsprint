@@ -139,9 +139,12 @@ form.search button:hover{
 	font-weight: bold;
 	/*font-size: 25px;*/
 }
-.footerText{
+footer p{
 	color: #ff5c5c;
 	font-family: 'Montserrat', sans-serif;
+}
+.footerText {
+  text-align: center;
 }
 .footer-row{
 	display: flex;
@@ -172,7 +175,25 @@ form.search button:hover{
     opacity: 0.7;
 }
 
-  
+.fa-facebook {
+  color: #007bff;
+}
+
+.fa-twitter {
+  color: #007bff;
+}
+
+.fa-google {
+  color: #007bff;
+}
+
+.fa-linkedin {
+  color: #007bff;
+}
+
+.fa-youtube {
+  color: #007bff;
+}
 
 
 

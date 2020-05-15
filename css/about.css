@@ -159,7 +159,8 @@ textarea {
 }
 footer p {
     color: #ff5c5c;
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 .footer-row{
 	display: flex;
