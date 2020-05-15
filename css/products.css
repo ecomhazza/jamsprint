@@ -24,16 +24,13 @@
 /*NAVBAR*/
 
 .titleName{
-  
   font-weight: 800;
   color: #ff5c5c;
   font-size: 5em;
   text-shadow: 2px 5px #161e67;
-  
 }
 
 .addshadow {
-
   font-size: 25px;
   text-shadow: 2px 2px #f2f2f2;
 }

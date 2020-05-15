@@ -13,9 +13,12 @@ body {
 .bg-blue {
     background-color: #161e67;
 }
+.bg-white-only {
+    background-color: #f2f3f4 !important;
+}
 .bg-white {
     background-color: #f2f3f4 !important;
-    margin-top: 10em;
+    margin-top: 5em;
     margin-bottom: 2em;
     border-radius: 25px;
 }
@@ -26,6 +29,9 @@ body {
 
 .bg-shadow {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.25), 0 6px 20px 0 rgba(255, 255, 255, 0.25);
+}
+.bg-shadowTwo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 .row {
@@ -54,21 +60,24 @@ p, label {
     margin-top: 8em;
     margin-bottom: 3em;
 }
+.marginBottom {
+    margin-bottom: 3em;
+}
 .padAround {
     padding: 2em 0;
 }
 .padBottom {
-    padding-bottom: 5em;
+    padding-bottom: 10em;
 }
 
 .bannerBackground {
-    background-image: url(../images/blueberry.png);
+    background-image: url(../images/jellytoast.jpg);
     background-position: top;
     background-size: cover;
 }
 .bannerBackgroundTwo {
     background-image: url(../images/contact.png);
-    background-position: top;
+    background-position: 0 11%;
     background-size: cover;
 }
 
@@ -174,16 +183,16 @@ textarea {
 }
 
 /* profile cards */
-.profile-card-4 .card-img-block{
+.profile-card .card-img-block{
     float:left;
     width:100%;
     height:150px;
     overflow:hidden;
 }
-.profile-card-4 .card-body{
+.profile-card .card-body{
     position:relative;
 }
-.profile-card-4 .profile {
+.profile-card .profile {
     border-radius: 50%;
     position: absolute;
     top: -62px;
@@ -194,10 +203,10 @@ textarea {
     background-color: #ff5c5c;
 
 }
-.profile-card-4 .card-img-block{
+.profile-card .card-img-block{
     position:relative;
 }
-.profile-card-4 .card-img-block > .info-box{
+.profile-card .card-img-block > .info-box{
     position:absolute;
     background: #ff5c5c;
     width:100%;
@@ -210,27 +219,27 @@ textarea {
     transition: 1s ease;
     opacity:0;
 }
-.profile-card-4 .card-img-block:hover > .info-box{
+.profile-card .card-img-block:hover > .info-box{
     opacity:1;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
-.profile-card-4 h5{
+.profile-card h5{
     font-weight:600;
     color: #161e67;
 }
-.profile-card-4 .card-text{
+.profile-card .card-text{
     font-weight:300;
     font-size:15px;
 }
-.profile-card-4 .icon-block{
+.profile-card .icon-block{
     float:left;
     width:100%;
 }
-.profile-card-4 .icon-block a{
+.profile-card .icon-block a{
     text-decoration:none;
 }
-.profile-card-4 i {
+.profile-card i {
   display: inline-block;
     font-size: 16px;
     color: #d90be1;
@@ -242,10 +251,38 @@ textarea {
     border-radius: 50%;
     margin:0 5px;
 }
-.profile-card-4 i:hover {
+.profile-card i:hover {
   background-color:#d90be1;
   color:#fff;
 }
 .card-text {
     color: black;
 }
+
+form.search button{
+	background-color: #ff5c5c;
+	color: #f2f2f2;
+}
+form.search button:hover{
+	background-color: #F2A22C;
+	color: #f2f2f2;
+}
+
+.jumbotron {
+    background-image: url("../images/natalie-rhea-riggs-S_AqsN193U8-unsplash.jpg");
+    background-size: cover;
+    background-position: 0px, 2px;
+    background-repeat: no-repeat;
+    margin-top: 7em;
+}
+.titleName{
+    font-weight: 800;
+    color: #ff5c5c;
+    font-size: 3em;
+    text-shadow: 2px 5px #161e67;
+  }
+  
+  .addshadow {
+    font-size: 25px;
+    text-shadow: 1px 1px #f2f2f2;
+  }
