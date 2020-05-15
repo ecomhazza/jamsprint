@@ -10,6 +10,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.bg-blue {
+    background-color: #161e67;
+}
+.bg-white {
+    background-color: #f2f3f4 !important;
+    margin-top: 10em;
+    margin-bottom: 2em;
+    border-radius: 25px;
+}
+.bg-white p {
+    color: black;
+    font-weight: 400;
+}
+
+.bg-shadow {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.25), 0 6px 20px 0 rgba(255, 255, 255, 0.25);
+}
+
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -32,20 +50,26 @@ p, label {
 .blackWhite {
     filter: grayscale(100%);
 }
-.marginTop {
-    margin-top: 10em !important;
-}
 .marginTopBottom {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 8em;
+    margin-bottom: 3em;
+}
+.padAround {
+    padding: 2em 0;
 }
 .padBottom {
-    padding-bottom: 20px;
+    padding-bottom: 5em;
 }
 
 .bannerBackground {
-    background-image: url(../images/jamsnjellies.png);
-    background-position: bottom;
+    background-image: url(../images/blueberry.png);
+    background-position: top;
+    background-size: cover;
+}
+.bannerBackgroundTwo {
+    background-image: url(../images/contact.png);
+    background-position: top;
+    background-size: cover;
 }
 
 textarea {
@@ -147,4 +171,81 @@ textarea {
 .custom-toggler .navbar-toggler-icon { 
     background-image: url( 
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+}
+
+/* profile cards */
+.profile-card-4 .card-img-block{
+    float:left;
+    width:100%;
+    height:150px;
+    overflow:hidden;
+}
+.profile-card-4 .card-body{
+    position:relative;
+}
+.profile-card-4 .profile {
+    border-radius: 50%;
+    position: absolute;
+    top: -62px;
+    left: 50%;
+    width:100px;
+    border: 3px solid rgba(255, 255, 255, 1);
+    margin-left: -50px;
+    background-color: #ff5c5c;
+
+}
+.profile-card-4 .card-img-block{
+    position:relative;
+}
+.profile-card-4 .card-img-block > .info-box{
+    position:absolute;
+    background: #ff5c5c;
+    width:100%;
+    height:100%;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+    font-size:14px;
+   -webkit-transition: 1s ease;
+    transition: 1s ease;
+    opacity:0;
+}
+.profile-card-4 .card-img-block:hover > .info-box{
+    opacity:1;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.profile-card-4 h5{
+    font-weight:600;
+    color: #161e67;
+}
+.profile-card-4 .card-text{
+    font-weight:300;
+    font-size:15px;
+}
+.profile-card-4 .icon-block{
+    float:left;
+    width:100%;
+}
+.profile-card-4 .icon-block a{
+    text-decoration:none;
+}
+.profile-card-4 i {
+  display: inline-block;
+    font-size: 16px;
+    color: #d90be1;
+    text-align: center;
+    border: 1px solid #d90be1;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+.profile-card-4 i:hover {
+  background-color:#d90be1;
+  color:#fff;
+}
+.card-text {
+    color: black;
 }
