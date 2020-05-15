@@ -1,8 +1,3 @@
-* {
-    /* color: #ffffff; */
-    color: #ff5c5c;
-    font-family: 'Montserrat', sans-serif
-}
 
 /*NAVBAR*/
 .navlogo{
@@ -21,75 +16,114 @@
 .nav-link:hover{
 	color: white;
 }
+form.search button{
+	background-color: #ff5c5c;
+	color: #f2f2f2;
+}
+form.search button:hover{
+	background-color: #F2A22C;
+	color: #f2f2f2;
+}
 /*NAVBAR*/
 
 .titleName{
+  
   font-weight: 800;
   color: #ff5c5c;
   font-size: 5em;
   text-shadow: 2px 5px #161e67;
+  
 }
 
 .addshadow {
+
   font-size: 25px;
   text-shadow: 2px 2px #f2f2f2;
-}
-
-h2 {
-  font-weight: 600;
+  color: #ff5c5c;
 }
 
 
-body {
-  background-color: #161e67;
+/* Products page css */
+.bodyBackground {
+  background-color: #f2f2f2;
 }
+
+
 
 .jumbotron {
-  background-image: url("../images/natalie-rhea-riggs-S_AqsN193U8-unsplash.jpg");
-  
+  background-image: url(../images/natalie-rhea-riggs-S_AqsN193U8-unsplash.jpg);
   background-size: cover;
   background-position: 0px, 2px;
   background-repeat: no-repeat;
-  margin-top: 10em;
-}
-.whiteName {
-  color: #f2f2f2;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
+  margin-top: 5em;
+  /* background-color: #161e67; */
 }
 
+
 .productHeader {
-  color: #f2f2f2;
   font-size: 3em;
   text-shadow: 1px 2px #ff5c5c;
   
 }
 
-img{
-  width: 100%;
-  /* margin-bottom: 5em; */
-  /* padding: 10em; */
-  border: 2px solid #ff5c5c;
-}
-
-
-.btn {
+.redBtn {
   background-color: #ff5c5c;
   color: #f2f2f2;
-
-  
 }
 
-/* .row {
-  margin-bottom: 5em;
-} */
+.imageRows {
+  margin-bottom: 2em;
+  padding: 5px 75px;
+}
 
 .line {
   background-color: #161e67;
 }
 
+/* new to card deck */
+.card-footer{
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 80% !important;
 
+}
+.card{
+  color: #f2f2f2;
+  background: transparent;
+  border: none;
+
+  } 
+
+  .card-title{
+   color: #161e67;
+   text-align: center;
+   font-size: 20px;
+  
+}
+  .card:hover .imageEffect {
+    opacity: 1;
+    /* background: #161e67; */
+  background: -moz-linear-gradient(-45deg, #ff5c5c 15%, #f2f2f2 100%);
+  background: -webkit-linear-gradient(-45deg, #ff5c5c 15%,#f2f2f2 100%);
+  background: linear-gradient(135deg, #ff5c5c 15%,#f2f2f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+  }
+
+  .imageEffect {
+    background: #161e67;
+    overflow: hidden;
+    transition: all ease-in-out;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  
+  } 
+  
+  .modal {
+    color:#ff5c5c;
+  }
 
 /*Footer CSS*/
 .footerLogo2{
@@ -97,10 +131,11 @@ img{
 	/*justify-content: center;*/
 	height: 115px;
 	width: 115px;
+	margin-top: 35px;
 	/*padding-top: 20px;*/
 }
 .footer-row{
-	background-color: #161e67;
+  background-color: #161e67;
 	font-weight: bold;
 	/*font-size: 25px;*/
 }
@@ -124,30 +159,21 @@ img{
 }
 /*Footer CSS*/
 
-
-/* new to card deck */
- .card{
-   background-color: #161e67;
-   color: #f2f2f2;
-   
-  } 
-  
-   .card-title{
-    color: #f2f2f2;
-    text-align: center;
-   
- }
-
- .custom-toggler.navbar-toggler { 
-  border-color: white; 
-} 
-
-
-.custom-toggler .navbar-toggler-icon { 
-  background-image: url( 
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
-} 
-
-.card {
-  border: none !important;
+.fa {
+  padding: 5px 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
+.fa:hover {
+    opacity: 0.7;
+}
+
+  
+
+
+
+

@@ -153,7 +153,12 @@ textarea {
 	/*font-size: 25px;*/
 }
 .footerText{
+    text-align: center;
 	color: #ff5c5c;
+	font-family: 'Montserrat', sans-serif;
+}
+footer p {
+    color: #ff5c5c;
 	font-family: 'Montserrat', sans-serif;
 }
 .footer-row{
@@ -286,3 +291,19 @@ form.search button:hover{
     font-size: 25px;
     text-shadow: 1px 1px #f2f2f2;
   }
+
+  .fa {
+    padding: 5px 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+ 
+  

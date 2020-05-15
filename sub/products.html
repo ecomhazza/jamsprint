@@ -6,39 +6,43 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="../css/products.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bodyBackground">
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand" href="#"><img class="navlogo" src="../images/jamsjellieslogo.png"></a>
-      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../sub/about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../sub/products.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../sub/about.html#contactUs">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://google.com">Cart</a>
-              </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <a class="navbar-brand" href="#">
+          <img class="navlogo" src="../images/guava.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sub/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sub/products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sub/about.html#contactUs">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://google.com">Cart</a>
+                </li>
+          </ul>
+          <form class="search form-inline my-2 my-lg-0">
+      			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      			<button class="btn my-2 my-sm-0" type="submit">Search</button>
+    		</form>
     </div>
     </nav>
 
@@ -59,20 +63,20 @@
       <!-- Products -->
       <!-- First Row of Pictures -->
       <div class="container-fluid ">
-          <div class="row">
+          <div class="row imageRows">
             <div class="card-deck">
               <!--Grape Jelly Image -->
-            <div class="card">
+            <div class="card cardPadding">
               <h5 class="card-title">Grape Jelly</h5>
               <div class="card-footer">
                 <a href="#" class="imgSize"data-toggle="modal" data-target="#exampleModal">
-                    <img src="../images/grapejelly.png" class="img-fluid" ......style="width:100%"alt="Image" data-toggle="modal" data-target="#exampleModal">
+                    <img src="../images/grapejelly.png" class="img-fluid imageEffect" ......style="width:100%"alt="Image" data-toggle="modal" data-target="#exampleModal">
                 </a>
               </div>
              </div>
              <!-- Grape Jelly Image -->
              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-               <div class="modal-dialog modal-sm" role="document">
+               <div class="modal-dialog modal-md" role="document">
                  <div class="modal-content">
                    <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
@@ -81,12 +85,19 @@
                      </button>
                    </div>
                    <div class="modal-body">
-                     <p>Organic Sugar, Water, Organic Concord Grape Juice Concentrate, Citric Acid, Fruit Pectin</p>
+                    <ul>
+                      <li>Organic Sugar</li>
+                      <li>Water</li>
+                      <li>Organic Concord Grape Juice Concentrate</li>
+                      <li>Citric Acid</li>
+                      <li>Fruit Pectin</li>
+                    </ul> 
+                  
                   </div>
                   <div class="modal-footer">
                       <p class="footer-text">12 oz</p>
                       
-                      <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                      <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
                      
                    </div>
                  </div>
@@ -94,11 +105,11 @@
              </div>
          
              
-             <div class="card">
+             <div class="card a">
               <h5 class="card-title">Strawberry</h5>
               <div class="card-footer">
                 <a href="#" class="imgSize"data-toggle="modal" data-target="#strawberryId">
-                  <img src="../images/Strawberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#strawberryId">
+                  <img src="../images/Strawberry.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#strawberryId">
               </a>
               </div>
               </div>
@@ -113,23 +124,31 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p>Water, Organic Strawberries, Organic Cane Sugar, Citric Acid, Natural Flavor, Organic Fruit And Vegetable Juice [Color]</p>
+                      <ul>
+                        <li>Water</li>
+                        <li>Organic Strawberries</li>
+                        <li>Organic Cane Sugar</li>
+                        <li>Citric Acid</li>
+                        <li>Natural Flavor</li>
+                        <li> Organic Fruit And Vegetable Juice [Color]</li>
+                      </ul>
+                      
                     </div>
                     <div class="modal-footer">
                         <p class="footer-text">12 oz</p>
                         
-                        <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                        <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
                        
                      </div>
                    </div>
                  </div>
                </div>
                <!--Apple Butter Image  -->
-               <div class="card">
+               <div class="card c">
                 <h5 class="card-title">Apple Butter</h5>
                 <div class="card-footer">
                   <a href="#" class="imgSize"data-toggle="modal" data-target="#applebutterId">
-                    <img src="../images/applebutter.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#applebutterId">
+                    <img src="../images/applebutter.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#applebutterId">
                 </a>
                 </div>
                 </div>
@@ -144,23 +163,42 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        <p>Apples, Cinnamon, Allspice, Brown Sugar, Honey</p>
+                        <ul>
+                          <li>Apples</li>
+                          <li>Cinnamon</li>
+                          <li>Allspice</li>
+                          <li>Brown Sugar</li>
+                          <li>Honey</li>
+                        </ul>
+                        
                       </div>
                       <div class="modal-footer">
                           <p class="footer-text">12 oz</p>
                           
-                          <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                          <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
                          
                        </div>
                      </div>
                    </div>
                  </div>
-           <!-- Blackberry Pic -->
+          
+          </div>
+          </div>
+        </div>
+       
+        
+        
+        
+        <!-- Middle  row of Pictures -->
+        <div class="container-fluid">
+          <div class="row imageRows">
+          <div class="card-deck">
+             <!-- Blackberry Pic -->
         <div class="card">
           <h5 class="card-title">Blackberry</h5>
           <div class="card-footer">
             <a href="#" class="imgSize"data-toggle="modal" data-target="#blackberryId">
-              <img src="../images/Blackberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#blackberryId">
+              <img src="../images/Blackberry.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#blackberryId">
           </a>
           </div>
           <!-- Blackberry Modal -->
@@ -174,35 +212,29 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Organic Seedless Blackberry Puree, Organic Cane Sugar, Fruit Pectin</p>
+                  <ul>
+                    <li>Organic Seedless Blackberry Puree</li>
+                    <li>Organic Cane Sugar</li>
+                    <li>Fruit Pectin</li>
+                  </ul>
+                  
                 </div>
                 <div class="modal-footer">
                     <p class="footer-text">12 oz</p>
                     
-                    <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                    <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
                    
                  </div>
                </div>
              </div>
            </div>
           </div>
-          </div>
-          </div>
-        </div>
-       
-        
-        
-        
-        <!-- Middle  row of Pictures -->
-        <div class="container-fluid">
-          <div class="row">
-          <div class="card-deck">
             <!-- Cinnamon Triple Berry and Modal -->
             <div class="card">
                 <h5 class="card-title">Cinnamon Triple Berry</h5>
                 <div class="card-footer">
                   <a href="#" class="imgSize"data-toggle="modal" data-target="#cinnamonTripleId">
-                    <img src="../images/Cinnamon-Spiced-Triple-Berry-Jam.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#cinnamonTripleId">
+                    <img src="../images/Cinnamon-Spiced-Triple-Berry-Jam.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#cinnamonTripleId">
                 </a>
                 </div>
               <div class="modal fade" id="cinnamonTripleId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -215,13 +247,29 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p>Berry Mix- (Organic Strawberries, Organic Blackberries, Organic Blueberries), Water, Organic Sugar, Fruit Pectin, Calcium Chloride, Citric Acid, Cinnamon, Allspice, Nutmeg
+                      <ul>
+                        <li>Berry Mix</li>
+                        <ul>
+                          <li>Organic Strawberries</li>
+                          <li>Organic Blackberries</li>
+                          <li>Organic Blueberries</li>
+                        </ul>
+                        <li> Water</li>
+                        <li>Organic Sugar</li>
+                        <li>Fruit Pectin</li>
+                        <li>Calcium Chloride</li>
+                        <li>Citric Acid</li>
+                        <li>Cinnamon</li>
+                        <li>Allspice</li>
+                        <li>Nutmeg</li>
+                      </ul>
+                     
                     </p>
                     </div>
                     <div class="modal-footer">
                         <p class="footer-text">12 oz</p>
                         
-                        <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                        <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
                        
                      </div>
                    </div>
@@ -235,7 +283,7 @@
             <h5 class="card-title">Cinnamon Blueberry</h5>
             <div class="card-footer">
               <a href="#" class="imgSize"data-toggle="modal" data-target="#cinnamonBlueID">
-                <img src="../images/cinnamonblueberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#cinnamonBlueID">
+                <img src="../images/cinnamonblueberry.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#cinnamonBlueID">
             </a>
             </div>
           <div class="modal fade" id="cinnamonBlueID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -248,12 +296,19 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Organic Wild Blueberries, Organic Cane Sugar, Cinnamon Apple Pectin, Ascorbic Acid (Vitamin C), Citric Acid</p>
+                  <ul>
+                    <li>Organic Wild Blueberries</li>
+                    <li>Organic Cane Sugar</li>
+                    <li>Cinnamon Apple Pectin</li>
+                    <li>Ascorbic Acid (Vitamin C)</li>
+                    <li>Citric Acid</li>
+                  </ul>
+                  
                 </div>
                 <div class="modal-footer">
                     <p class="footer-text">12 oz</p>
                     
-                    <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                    <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
                    
                  </div>
                </div>
@@ -261,67 +316,7 @@
            </div>
         </div>
 
-        <!-- Cinnamon Pear Butter Modal -->
-        <div class="card" >
-            <h5 class="card-title">Ginger Cardamom Pear</h5>
-            <div class="card-footer">
-              <a href="#" class="imgSize"data-toggle="modal" data-target="#gingerCardID">
-                <img src="../images//Ginger-Cardamom-Pear-Butter.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#gingerCardID">
-            </a>
-            </div>
-          <div class="modal fade" id="gingerCardID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Bartlett Pears, Organic Evaporated Cane Juice, Cardamom, Ginger, Lemon Juice, Salt</p>
-                </div>
-                <div class="modal-footer">
-                    <p class="footer-text">12 oz</p>
-                    
-                    <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
-                   
-                 </div>
-               </div>
-             </div>
-           </div>
-        </div> 
-
-        <!-- BlueBerry Modal -->
-        <div class="card">
-            <h5 class="card-title">Blueberry Jam</h5>
-            <div class="card-footer">
-              <a href="#" class="imgSize"data-toggle="modal" data-target="#blueberryId">
-                <img src="../images/blueberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#blueberryId">
-            </a>
-            </div>
-          <div class="modal fade" id="blueberryId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Organic Wild Blueberries, Organic Cane Sugar, Apple Pectin</p>
-                </div>
-                <div class="modal-footer">
-                    <p class="footer-text">12 oz</p>
-                    
-                    <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
-                   
-                 </div>
-               </div>
-             </div>
-           </div>
-        </div>
+        
         </div>
         </div>
         </div>
@@ -329,8 +324,83 @@
         <!-- Last row of Pictures -->
        
         <div class="container-fluid">
-            <div class="row">
+            <div class="row imageRows">
               <div class="card-deck">
+                <!-- Cinnamon Pear Butter Modal -->
+        <div class="card" >
+          <h5 class="card-title">Ginger Cardamom Pear</h5>
+          <div class="card-footer">
+            <a href="#" class="imgSize"data-toggle="modal" data-target="#gingerCardID">
+              <img src="../images//Ginger-Cardamom-Pear-Butter.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#gingerCardID">
+          </a>
+          </div>
+        <div class="modal fade" id="gingerCardID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>Bartlett Pears</li>
+                  <li>Organic Evaporated Cane Juice</li>
+                  <li>Cardamom</li>
+                  <li>Ginger</li>
+                  <li>Lemon Juice</li>
+                  <li>Salt</li>
+                </ul>
+                
+              </div>
+              <div class="modal-footer">
+                  <p class="footer-text">12 oz</p>
+                  
+                  <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
+                 
+               </div>
+             </div>
+           </div>
+         </div>
+      </div> 
+
+      <!-- BlueBerry Modal -->
+      <div class="card">
+          <h5 class="card-title">Blueberry Jam</h5>
+          <div class="card-footer">
+            <a href="#" class="imgSize"data-toggle="modal" data-target="#blueberryId">
+              <img src="../images/blueberry.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#blueberryId">
+          </a>
+          </div>
+        <div class="modal fade" id="blueberryId" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>Organic Wild Blueberries</li>
+                  <li>Organic Cane Sugar</li>
+                  <li>Apple Pectin</li>
+                  
+                </ul>
+                
+              </div>
+              <div class="modal-footer">
+                  <p class="footer-text">12 oz</p>
+                  
+                  <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
+                 
+               </div>
+             </div>
+           </div>
+         </div>
+      </div>
 
               
                 <!-- Lemon Modal -->
@@ -338,7 +408,7 @@
                     <h5 class="card-title">Lemon</h5>
                     <div class="card-footer">
                       <a href="#" class="imgSize"data-toggle="modal" data-target="#lemonID">
-                        <img src="../images/lemon.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#lemonID">
+                        <img src="../images/lemon.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#lemonID">
                     </a>
                     </div>
                   <div class="modal fade" id="lemonID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -351,12 +421,18 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <p>Meyer Lemons, Fresh Meyer Lemon Juice, Organic Cane Juice</p>
+                          <ul>
+                            <li>Meyer Lemons</li>
+                            <li>Fresh Meyer Lemon Juice</li>
+                            <li>Organic Cane Juice</li>
+                            
+                          </ul>
+                          
                         </div>
                         <div class="modal-footer">
                             <p class="footer-text">12 oz</p>
                             
-                            <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
+                            <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
                            
                          </div>
                        </div>
@@ -364,102 +440,141 @@
                    </div>
                 </div> 
 
-                <!-- Mix Berry -->
-                <div class="card">
-                    <h5 class="card-title">Mix Berry</h5>
-                    <div class="card-footer">
-                      <a href="#" class="imgSize"data-toggle="modal" data-target="#mixberryID">
-                        <img src="../images/mixberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#mixberryID">
-                    </a>
-                    </div>
-                  <div class="modal fade" id="mixberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <p>Strawberries (Organic), Raspberries (Organic), Blueberries (Organic), Grape Puree (Organic), Water, Lemon Juice Concentrate (Organic), Dried Sugar Cane Syrup (Organic), Fruit Pectin</p>
-                        </div>
-                        <div class="modal-footer">
-                            <p class="footer-text">12 oz</p>
-                            
-                            <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
-                           
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                </div> 
-
-                <!-- Raspberry -->
-                <div class="card">
-                    <h5 class="card-title">Raspberry</h5>
-                    <div class="card-footer">
-                      <a href="#" class="imgSize"data-toggle="modal" data-target="#raspberryID">
-                        <img src="../images/raspberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#raspberryID">
-                    </a>
-                    </div>
-                  <div class="modal fade" id="raspberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <p> Organic Cane Sugar, Organic Raspberries, Fruit Pectin, Citric Acid</p>
-                        </div>
-                        <div class="modal-footer">
-                            <p class="footer-text">12 oz</p>
-                            
-                            <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
-                           
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                </div> 
-
-               
-                <!-- Super Berry -->
-                <div class="card">
-                    <h5 class="card-title">Super Berry</h5>
-                    <div class="card-footer">
-                      <a href="#" class="imgSize"data-toggle="modal" data-target="#superberryID">
-                        <img src="../images/superberry.png" class="img-fluid" style="width:100%"alt="Image" data-toggle="modal" data-target="#superberryID">
-                    </a>
-                    </div>
-                  <div class="modal fade" id="superberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <p>Wild Blueberries, Organic Strawberries, Organic Blueberries, Organic Cane Sugar, Cinnamon Apple Pectin, Ascorbic Acid (Vitamin C), Citric Acid.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <p class="footer-text">12 oz</p>
-                            
-                            <button type="button" class="btn" data-dismiss="modal">Add to Cart</button> 
-                           
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                </div> 
+                
+                
             </div>
             </div>
 
+        </div>
+
+        <div class="container-fluid">
+          <div class="row imageRows">
+            <div class="card-deck">
+              <div class="card">
+                <h5 class="card-title">Mix Berry</h5>
+                <div class="card-footer">
+                  <a href="#" class="imgSize"data-toggle="modal" data-target="#mixberryID">
+                    <img src="../images/mixberry.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#mixberryID">
+                </a>
+                </div>
+              <div class="modal fade" id="mixberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <ul>
+                        <li>Strawberries (Organic)</li>
+                        <li>Raspberries (Organic)</li>
+                        <li>Blueberries (Organic)</li>
+                        <li>Grape Puree (Organic)</li>
+                        <li>Water</li>
+                        <li>Lemon Juice Concentrate (Organic)</li>
+                        <li>Dried Sugar Cane Syrup (Organic)</li>
+                        <li>Fruit Pectin</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    <div class="modal-footer">
+                        <p class="footer-text">12 oz</p>
+                        
+                        <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
+                       
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div> 
+
+            <!-- Raspberry -->
+            <div class="card">
+                <h5 class="card-title">Raspberry</h5>
+                <div class="card-footer">
+                  <a href="#" class="imgSize"data-toggle="modal" data-target="#raspberryID">
+                    <img src="../images/raspberry.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#raspberryID">
+                </a>
+                </div>
+              <div class="modal fade" id="raspberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <ul>
+                        <li>Organic Cane Sugar</li>
+                        <li>Organic Raspberries</li>
+                        <li>Fruit Pectin</li>
+                        <li>Citric Acid</li>
+                      </ul>
+                     
+                    </div>
+                    <div class="modal-footer">
+                        <p class="footer-text">12 oz</p>
+                        
+                        <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
+                       
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div> 
+
+           
+            <!-- Super Berry -->
+            <div class="card">
+                <h5 class="card-title">Super Berry</h5>
+                <div class="card-footer">
+                  <a href="#" class="imgSize"data-toggle="modal" data-target="#superberryID">
+                    <img src="../images/superberry.png" class="img-fluid imageEffect" style="width:100%"alt="Image" data-toggle="modal" data-target="#superberryID">
+                </a>
+                </div>
+              <div class="modal fade" id="superberryID" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Nutritional Info</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <ul>
+                        <li>Wild Blueberries</li>
+                        <li>Organic Strawberries</li>
+                        <li>Organic Blueberries</li>
+                        <li>Organic Cane Sugar</li>
+                        <li>Cinnamon Apple Pectin</li>
+                        <li>Ascorbic Acid (Vitamin C)</li>
+                        <li>Citric Acid</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    <div class="modal-footer">
+                        <p class="footer-text">12 oz</p>
+                        
+                        <button type="button" class="btn redBtn" data-dismiss="modal">Add to Cart</button> 
+                       
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div> 
+
+
+
+
+            </div>
+          </div>
         </div>
 
          <!-- Footer -->
@@ -472,7 +587,12 @@
             	<div class="address footerText col-md-4">
                 <p class="location item1">1414 S. Tryon St.</p>
                 <p class="location">Charlotte, NC 28203</p>
-               		<p class="location">maherhalljamsjellies.com</p>
+                     <p class="location">maherhalljamsjellies.com</p>
+                     <a href="#" class="fa fa-facebook"></a>
+                      <a href="#" class="fa fa-twitter"></a>
+                      <a href="#" class="fa fa-google"></a>
+                      <a href="#" class="fa fa-linkedin"></a>
+                      <a href="#" class="fa fa-youtube"></a>
             	</div>
         	</div>
        	</div>
