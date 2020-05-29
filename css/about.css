@@ -189,6 +189,12 @@ footer p {
 }
 
 /* profile cards */
+.card {
+    transition: 0.5s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
+}
 .profile-card .card-img-block{
     float:left;
     width:100%;
@@ -308,3 +314,28 @@ form.search button:hover{
   }
  
   
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
